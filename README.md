@@ -1,9 +1,9 @@
 ﻿
-     SimpleSqlDB is a very, VERY crude SQL wrapper around a set of DataTable, thus creatinga simple in-memory SQL database.
-     It implements all of the typical IDb*** classes so it works interchangeably with much database code.  The SQL variant it 
-     implements is compatible with DB2 at the current time but it would be easy to make it more flexible.
+SimpleSqlDB is a very, VERY crude SQL wrapper around a set of DataTable, thus creatinga simple in-memory SQL database.
+It implements all of the typical IDb*** classes so it works interchangeably with much database code.  The SQL variant it 
+implements is compatible with DB2 at the current time but it would be easy to make it more flexible.
      
-     An example of using this class is very similar to other .NET database code:
+An example of using this class is very similar to other .NET database code:
      
 ```
          SimpleSqlDB myDB = new SimpleSqlDB();
@@ -25,8 +25,8 @@
          }
 ```
 
-     The supported syntax is limited in the sense that it does not support JOINs.  Queries can only be against
-     one table at a time.  However, here are some of the types of queries that ARE supported against a single table:
+The supported syntax is limited in the sense that it does not support JOINs.  Queries can only be against
+one table at a time.  However, here are some of the types of queries that ARE supported against a single table:
  
 ```
          CREATE TABLE MYTABLE(ColName1 Type1, ColName2 Type2, ...) 
@@ -58,10 +58,10 @@
          SELECT STDEV(ColName1) FROM MYTABLE
          SELECT VAR(ColName1) FROM MYTABLE
 ```    
-     Currently, WHERE clauses can contain multiple comparisons but they must be either all 'AND' or all 'OR', not a mixture.
-     The SQL parsing implementation supports bound parameters with "?" markers.
+Currently, WHERE clauses can contain multiple comparisons but they must be either all 'AND' or all 'OR', not a mixture.
+The SQL parsing implementation supports bound parameters with "?" markers.
      
-     Data types are limited to these:
+Data types are limited to these:
  
      ```
          CHAR
@@ -72,4 +72,4 @@
          DECIMAL(mmm, nnn)
          TIMESTAMP
 ```
-     This class is thread-safe.
+This class is thread-safe.
