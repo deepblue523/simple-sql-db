@@ -1,7 +1,6 @@
 ﻿
 SimpleSqlDB is a very, VERY crude SQL wrapper around a set of DataTable, thus creatinga simple in-memory SQL database.
-It implements all of the typical IDb*** classes so it works interchangeably with much database code.  The SQL variant it 
-implements is compatible with DB2 at the current time but it would be easy to make it more flexible.
+It implements all of the typical IDb*** classes so it works interchangeably with much database code.  
      
 An example of using this class is very similar to other .NET database code:
      
